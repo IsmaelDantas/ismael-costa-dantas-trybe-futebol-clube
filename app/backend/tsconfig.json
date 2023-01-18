@@ -2,21 +2,28 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "commonjs",
-    "sourceMap": true,                     
-    "outDir": "./build",
+    "sourceMap": true,
+    "outDir": "build",
     "rootDir": "./src",
     "strict": true,
     "moduleResolution": "node",
-    "baseUrl": ".", 
+    "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "*": [
+        "node_modules_/*"
+      ]
     }
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/tests"]
+  "include": [
+    "src/**/*",
+    "src/database/migrations/.js"
+  ],
+  "exclude": [
+    "src/tests"
+  ]
 }
